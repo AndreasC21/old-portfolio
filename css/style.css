@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  color: #d6e0ff;
+  margin: 0px 50px;
+  background-color: #1f2334;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2334;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 65px;
+  z-index: 1;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  font-size: 1.3em;
+}
+
+.nav-title a {
+  font-weight: 800;
+  text-decoration: none;
+  color: #d6e0ff;
+  font-size: 1.3em;
+  transition: ease 0.3s;
+}
+
+.nav-title a:hover {
+  cursor: default;
+  color: #9eafff;
+}
+
+.nav-items {
+  display: flex;
+  padding: 0px 20px 0px 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #d6e0ff;
+  transition: ease 0.3s;
+}
+
+.nav-items:hover {
+  color: #9eafff;
+}
+
+.navbar-icon {
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.close-icon i {
+  position: fixed;
+  right: 0;
+  padding-right: 70px;
+}
+
+.nav-mobile-item {
+  padding-top: 50px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3em;
+  margin: 0 auto;
+}
+
+.home {
+  padding: 150px 10px 300px 15px;
+}
+
+.home h2 {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.home span {
+  font-size: 1em;
+  color: #9eafff;
+}
+
+.project {
+  padding: 150px 10px 150px 15px;
+}
+
+.project h1 {
+  margin-bottom: 50px;
+}
+
+.project-content h3 {
+  font-weight: 800;
+  font-size: 1.5em;
+  margin: 10px 0px 10px 0px;
+}
+
+.project-content span {
+  font-size: 1em;
+  color: #9eafff;
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.project-title {
+  max-width: 300px;
+}
+
+.project-header img {
+  width: 266px;
+  height: 200px;
+  border: 2px solid #d6e0ff;
+  object-fit: contain;
+  border-radius: 10px;
+  opacity: 0.6;
+  transition: ease 0.5s;
+}
+
+.project-header img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.experience {
+  padding: 150px 10px 300px 15px;
+}
+
+.exp-content h3 {
+  margin: 0 auto;
+}
+
+.exp-content span {
+  color: #9eafff;
+}
+
+.skills {
+  padding: 150px 10px 500px 15px;
+}
+
+.skill-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.skill-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6e0ff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-logo img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.contact {
+  padding: 20px 10px 20px 15px;
+  border-bottom: #3b47a1 solid 1px;
+}
+
+.contact span {
+  font-size: 1em;
+  color: #9eafff;
+}
+
+.contact h1 {
+  font-weight: 800;
+  margin: 0px;
+  font-size: 3em;
+}
+
+.fab {
+  width: 30px;
+  font-size: 25px;
+  margin: 20px 0px 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  color: #d6e0ff;
+}
+
+.fab:hover {
+  color: #9eafff;
+}
+
+footer {
+  color: #9eafff;
+  padding: 20px 10px 20px 15px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-title {
+    flex: 1;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navbar-icon {
+    display: inline;
+  }
+
+  .nav-mobile {
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    padding-top: 25px;
+    background-color: #1f2334;
+    width: 65%;
+    height: 100%;
+    right: 0;
+    animation: linear;
+    animation-name: show;
+    animation-duration: 0.4s;
+  }
+
+  @-webkit-keyframes show {
+    0% {
+      right: -60%;
+      transform: translateX(0);
+    }
+    100% {
+      right: 0;
+      transform: translateX(0);
+    }
+  }
+
+  .nav-mobile-item a {
+    font-size: 1.2em;
+    padding-bottom: 15px;
+  }
+
+  .home h1 {
+    font-size: 3em;
+  }
+
+  .home h2 {
+    font-size: 1.5em;
+  }
+
+  .home span {
+    display: inline-block;
+
+    margin: 0 auto;
+    font-size: 1em;
+  }
+
+  .project h2 {
+    font-size: 1em;
+  }
+
+  .contact h1 {
+    font-size: 2em;
+  }
+
+  .contact span {
+    font-size: 0.98em;
+  }
+
+  .fab {
+    width: 50px;
+    font-size: 2em;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.5em;
+  }
+}
